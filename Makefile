@@ -1,7 +1,7 @@
-obj-m += ex07_simple_char_drv.o
+obj-m += ex7_simple_char_drv.o
 
 all:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWM) modules
-
+		make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+		 
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWM) clean 
+		make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
